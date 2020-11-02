@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<style>
+#content {
+    width:99%;
+    height:100%;
+    padding:10px;
+}
+div#header2 {
+	width:inherit;
+    background-color:#D50000;
+    color:white;
+    text-align:center;
+    padding:5px;
+}
+#header1 {
+	width:inherit;
+    color:black;
+    padding:5px;
+    font-size: 38px;
+    background-image: url(https://wx2.sinaimg.cn/mw690/b016a00egy1gk5i1rayllj215o02vwer.jpg);
+    background-size: 100% 110%
+}
+
+#section {
+    width:inherit;
+    padding:10px;
+}
+.smalltitle {
+    color:grey;
+    font-size: 18px;
+}
+.line {
+    width:98%;
+    margin-top: 6px;
+    margin: 0 auto;
+}
+.left {
+    width:80%;
+    display: inline-block;
+    text-align:left;
+}
+div#checkbox {
+    width:inherit;
+    text-align:center;
+    margin-top: 16px;
+}
+div#confirm {
+    width:inherit;
+    text-align:center;
+    margin-top: 16px;
+}
+.right {
+    width:20%;
+    color: #D50000;
+    display: inline-block;
+    text-align:right;
+}
+.titlehr {
+	width:inherit;
+    margin-bottom: 19px;
+}
+
+.innerhr {
+	width:98%;
+  margin-bottom: 12px;
+  color: #D50000;
+}
+.redbutton {
+	width: 20%;
+    padding:5px;
+    background-color: white;
+    border-radius: 5px;
+    color: black;
+    font-weight: bold;
+    border: 2px solid #D50000;
+}
+
+.redbutton:hover {
+  background-color: #D50000;
+  color: white;
+}
+</style>
+<script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.8.2.min.js" type="text/javascript"></script>
+</head>
+
+<body>
+
+<div id="content">
+  <div id="header1">
+      <h1></h1>
+  </div>
+  <div id="header2">
+    <h1><a href="./balance.html">
+      <img border="0" src="https://www.easyicon.net/api/resizeApi.php?id=1155135&size=64" align="left"/>
+    </a>Change Fund Product</h1>
+  </div>
+
+  <div id="section">
+
+  <p class="smalltitle">Default Cash Fund Product</p>
+  <hr class="titlehr">
+  <div class="line"><div class="left"><input type="radio" id="0" name="myradio" value="lion" checked = 'checked'><label>Logical SGD Fund</label>  </div><div class="right">0.25% <a href="./lion_details.html"><img border="0" src="https://wx4.sinaimg.cn/mw690/b016a00egy1gk5zux6rqyj200o00o0sh.jpg" /></a></div></div>
+
+  <!-- <div>
+    <span>您的性別：</span>
+    <div id="grid">
+        <input id="genderMaleVal" name="gender" type="radio" value="male"><label>男</label>
+        <input id="genderFemaleVal" name="gender" type="radio" value="female"><label>女</label>
+        <input id="genderOther" name="gender" type="radio" value="other"><label>其他</label>
+    </div>
+  </div> -->
+  <p class="smalltitle">Select Alternative Funds</p>
+  <hr class="titlehr">
+  <div class="line"><div class="left"><input type="radio" id="1" name="myradio" value="fullerton"><label>Fullerton SGD Fund</label>  </div><div class="right">0.21% <a href="./fullerton_details.html"><img border="0" src="https://wx4.sinaimg.cn/mw690/b016a00egy1gk5zux6rqyj200o00o0sh.jpg" /></a></div></div>
+  <hr class="innerhr">
+  <div class="line"><div class="left"><input type="radio" id="2" name="myradio" value="phillip"><label>Phillip Money Market Fund</label>  </div><div class="right">0.24% <a href="./lion_details.html"><img border="0" src="https://wx4.sinaimg.cn/mw690/b016a00egy1gk5zux6rqyj200o00o0sh.jpg" /></a></div></div>
+  <hr class="innerhr">
+  <div class="line"><div class="left"><input type="radio" id="3" name="myradio" value="uob"><label>UOB United SGD Fund</label>  </div><div class="right">0.23% <a href="./lion_details.html"><img border="0" src="https://wx4.sinaimg.cn/mw690/b016a00egy1gk5zux6rqyj200o00o0sh.jpg" /></a></div></div>
+  <hr class="innerhr">
+  <div class="line"><div class="left"><input type="radio" id="4" name="myradio" value="globallife"><label>Global Life Sciences Fund</label>  </div><div class="right">0.24% <a href="./lion_details.html"><img border="0" src="https://wx4.sinaimg.cn/mw690/b016a00egy1gk5zux6rqyj200o00o0sh.jpg" /></a></div></div>
+  <hr class="innerhr">
+  <div class="line"><div class="left"><input type="radio" id="5" name="myradio" value="asian"><label>Asian Dividend Income Fund</label>  </div><div class="right">0.21% <a href="./lion_details.html"><img border="0" src="https://wx4.sinaimg.cn/mw690/b016a00egy1gk5zux6rqyj200o00o0sh.jpg" /></a></div></div>
+  <hr class="innerhr">
+  <div class="line"><div class="left"><input type="radio" id="6" name="myradio" value="horizon"><label>Horizon Asian Dividend Income Fund</label>  </div><div class="right">0.24% <a href="./lion_details.html"><img border="0" src="https://wx4.sinaimg.cn/mw690/b016a00egy1gk5zux6rqyj200o00o0sh.jpg" /></a></div></div>
+  <hr class="innerhr">
+  <div class="line"><div class="left"><input type="radio" id="7" name="myradio" value="globaltech"><label>Global Technology Fund</label>  </div><div class="right">0.21% <a href="./lion_details.html"><img border="0" src="https://wx4.sinaimg.cn/mw690/b016a00egy1gk5zux6rqyj200o00o0sh.jpg" /></a></div></div>
+  </div>
+
+	<div id="checkbox">
+      <input type="checkbox" id="agree" name="agree" value="whatever">
+      <label for="agree"> Agree to </label><a href="https://www.dbs.com.sg/personal/default.page">Terms and Conditions</a>
+    </div>
+
+    <div id="confirm">
+      <button class="redbutton">CONFIRM</button>
+    </div>
+<script type="text/javascript" src="js/changefund.js"></script>
+<div class="line"><div class="left"><a href="./withdraw.html">Withdraw Plan</a> </div></div>
+</body>
+</html>

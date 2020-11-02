@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<style>
+#content {
+    width:99%;
+    height:100%;
+    padding:10px;
+}
+div#header2 {
+	width:inherit;
+    background-color:#D50000;
+    color:white;
+    text-align:center;
+    padding:5px;
+}
+#header1 {
+	width:inherit;
+    color:black;
+    padding:5px;
+    font-size: 38px;
+    background-image: url(https://wx2.sinaimg.cn/mw690/b016a00egy1gk5i1rayllj215o02vwer.jpg);
+    background-size: 100% 110%
+}
+
+#section {
+    width:inherit;
+    padding:10px;
+}
+.smalltitle {
+    color:grey;
+    font-size: 24px;
+}
+.line {
+    width:98%;
+    margin-top: 6px;
+    margin: 0 auto;
+}
+.left {
+    width:80%;
+    display: inline-block;
+    text-align:left;
+    font-weight: bold;
+}
+div#checkbox {
+    width:inherit;
+    text-align:center;
+    margin-top: 16px;
+}
+div#confirm {
+    width:inherit;
+    text-align:center;
+    margin-top: 16px;
+}
+.right {
+    width:20%;
+    color: #D50000;
+    display: inline-block;
+    text-align:right;
+}
+.titlehr {
+	width:inherit;
+    margin-bottom: 19px;
+}
+
+.innerhr {
+	width:98%;
+  margin-bottom: 12px;
+  color: #D50000;
+}
+.redbutton {
+	width: 20%;
+    padding:5px;
+    background-color: white;
+    border-radius: 5px;
+    color: black;
+    font-weight: bold;
+    border: 2px solid #D50000;
+}
+
+.redbutton:hover {
+  background-color: #D50000;
+  color: white;
+}
+.greenbutton {
+	width: 20%;
+    padding:5px;
+    background-color: white;
+    border-radius: 5px;
+    color: black;
+    font-weight: bold;
+    border: 2px solid #008000;
+}
+
+.greenbutton:hover {
+  background-color: #008000;
+  color: white;
+}
+</style>
+</head>
+
+<body>
+
+<div id="content">
+
+  <div id="header1">
+      <h1></h1>
+  </div>
+  <div id="header2">
+    <h1><a href="./balance.html">
+      <img border="0" src="https://www.easyicon.net/api/resizeApi.php?id=1155135&size=64" align="left"/>
+    </a>My Cash Fund</h1>
+  </div>
+
+  <div id="section">
+  <p class="smalltitle">My Earnings</p>
+  <hr class="titlehr">
+  <div align = 'center'>
+    <iframe width="600" height="371" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTH3ikSAoyzTFPW_a5tpTTh-sudK535xP_vsxcBjX3OEuXzaq54sR9I2WzoMYIPT94hCkp8nb35qP2c/pubchart?oid=758604522&amp;format=interactive"></iframe>
+    </div>
+    <p class="smalltitle">My Balance</p>
+    <hr class="titlehr">
+    <div align = 'center'>
+    <iframe width="600" height="371" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTH3ikSAoyzTFPW_a5tpTTh-sudK535xP_vsxcBjX3OEuXzaq54sR9I2WzoMYIPT94hCkp8nb35qP2c/pubchart?oid=947698764&amp;format=interactive"></iframe>
+  </div>
+  <hr class="titlehr">
+  </div>
+
+
+</div>
+<div id="confirm">
+  <a href="./transferin.html"><button class="redbutton">Transfer In </button></a>
+</div>
+<div id="confirm">
+  <a href="./changefund.html"><button class="greenbutton">Change Plan </button></a>
+</div>
+<div class="line"><div class="left"><a href="./transferout.html">Transfer to DBS Account</a> </div></div>
+</html>
