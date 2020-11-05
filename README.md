@@ -3,7 +3,7 @@ In this demo, we consider Cash Fund as an API in DBS DigiBank and consider it in
 
 ## Requiremnets
 * ***Browser***: Internet Explorer
-* ***Actions***: If there is a *Allow blocked content* popup when you open a file in browser, click on that.
+* ***Actions***: If there is a *Allow blocked content* popup when you open a file in browser, click allow.
 
 ## How to run
 1. ***Start your journey***: Open *transferin.html*   
